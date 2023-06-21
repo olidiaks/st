@@ -5,7 +5,11 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
+<<<<<<< HEAD
 static char *font = "Liberation Mono:pixelsize=18:antialias=true:autohint=true";
+=======
+static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+>>>>>>> 25ac019 (Add copyurl patch)
 static int borderpx = 2;
 
 /*
@@ -93,9 +97,12 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+<<<<<<< HEAD
 /* bg opacity */
 float alpha = 0.8;
 
+=======
+>>>>>>> 25ac019 (Add copyurl patch)
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
@@ -204,6 +211,11 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+<<<<<<< HEAD
+=======
+	{ MODKEY,               XK_l,           copyurl,        {.i =  0} },
+	{ MODKEY|ShiftMask,     XK_L,           copyurl,        {.i =  1} },
+>>>>>>> 25ac019 (Add copyurl patch)
 };
 
 /*
