@@ -191,8 +191,10 @@ static MouseShortcut mshortcuts[] = {
 #define TERMMOD (ControlMask|ShiftMask)
 
 static char *openurlcmd[] = { "/bin/sh", "-c",
-                              "xurls | dmenu -l 10 -w $WINDOWID | xargs -r open",
+                              "xurls | dmenu -l 100 | xargs -r open",
                               "externalpipe", NULL };
+
+static char *copyoutput[] = { "/bin/sh", "-c", "st-copyout", "externalpipe", NULL };
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
